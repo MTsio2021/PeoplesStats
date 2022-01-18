@@ -1,0 +1,196 @@
+<div
+  class="offcanvas offcanvas-start sidebar-nav bg-dark"
+  tabindex="-1"
+  id="sidebar"
+>
+  <div class="offcanvas-body p-0">
+    <nav class="navbar-dark">
+      <ul class="navbar-nav">
+        <li>
+          <div class="text-muted small fw-bold text-uppercase px-3">
+            CORE
+          </div>
+        </li>
+        <li>
+          <a href="#" class="nav-link px-3 active">
+            <span class="me-2"><i class="bi bi-speedometer2"></i></span>
+            <span>Dashboard</span>
+          </a>
+        </li>
+        <li class="my-4"><hr class="dropdown-divider bg-light" /></li>
+        <li>
+          <div class="text-muted small fw-bold text-uppercase px-3 mb-3">
+            Interface
+          </div>
+        </li>
+        <li>
+          <a
+            class="nav-link px-3 sidebar-link"
+            data-bs-toggle="collapse"
+            href="#layouts"
+          >
+            <span class="me-2"><i class="bi bi-layout-split"></i></span>
+            <span>Layouts</span>
+            <span class="ms-auto">
+              <span class="right-icon">
+                <i class="bi bi-chevron-down"></i>
+              </span>
+            </span>
+          </a>
+          <div class="collapse" id="layouts">
+            <ul class="navbar-nav ps-3">
+              <li>
+                <a href="#" class="nav-link px-3">
+                  <span class="me-2"
+                    ><i class="bi bi-speedometer2"></i
+                  ></span>
+                  <span>Dashboard</span>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </li>
+        <li>
+          <a href="#" class="nav-link px-3">
+            <span class="me-2"><i class="bi bi-book-fill"></i></span>
+            <span>Pages</span>
+          </a>
+        </li>
+        <li class="my-4"><hr class="dropdown-divider bg-light" /></li>
+        <li>
+          <div class="text-muted small fw-bold text-uppercase px-3 mb-3">
+            Addons
+          </div>
+        </li>
+        <li>
+          <a href="#" class="nav-link px-3">
+            <span class="me-2"><i class="bi bi-graph-up"></i></span>
+            <span>Charts</span>
+          </a>
+        </li>
+        <li>
+          <a href="#" class="nav-link px-3">
+            <span class="me-2"><i class="bi bi-table"></i></span>
+            <span>Tables</span>
+          </a>
+        </li>
+      </ul>
+    </nav>
+  </div>
+</div>
+<!-- offcanvas -->
+<main class="mt-5 pt-3">
+  <div class="container-fluid">
+    <div class="row m-2">
+        <span>User Connecté <img src="" alt="img du user"></span>
+    </div>
+    <div class="row m-2">
+      <span>12:00:00</span>
+  </div>
+    <div class="row">
+      <div class="col-md-4 mb-3">
+        <div class="card h-100">
+          <div class="card-header">
+            <span class="me-2"><i class="bi bi-bar-chart-fill"></i></span>
+            Widget Nombre User
+          </div>
+          <div class="card-body">
+            <canvas class="chart" width="400" height="200"></canvas>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4 mb-3">
+        <div class="card h-100">
+          <div class="card-header">
+            <span class="me-2"><i class="bi bi-bar-chart-fill"></i></span>
+            Widget Tableau Pays
+          </div>
+          <div class="card-body">
+            <canvas class="chart" width="400" height="200"></canvas>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4 mb-3">
+        <div class="card h-100">
+          <div class="card-header">
+            <span class="me-2"><i class="bi bi-bar-chart-fill"></i></span>
+            Widget Donut
+          </div>
+          <div class="card-body">
+            <canvas class="chart" width="400" height="200"></canvas>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-12 mb-3">
+        <div class="card">
+          <div class="card-header">
+            <span><i class="bi bi-table me-2"></i></span> Liste User
+          </div>
+          <div class="card-body">
+            <div class="table-responsive">
+              <table
+                id="example"
+                class="table table-striped data-table"
+                style="width: 100%"
+              >
+                <thead>
+                  <tr>
+                    <th>Name</th>
+                    <th>Country</th>
+                    <th>City</th>
+                    <th>Phone</th>
+                    <th>Gender</th>
+                    <th>Email</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>Tiger Nixon</td>
+                    <td>Ecosse</td>
+                    <td>Edinburgh</td>
+                    <td>06 06 06 06 06</td>
+                    <td>M</td>
+                    <td>tiger@nixon.fr</td>
+                  </tr>
+                  <tr>
+                    <td>Garrett Winters</td>
+                    <td>Japon</td>
+                    <td>Tokyo</td>
+                    <td>07 07 07 07 07</td>
+                    <td>F</td>
+                    <td>garrett@winters.fr</td>
+                  </tr>
+                  <tr>
+                    <td>Shad Decker</td>
+                    <td>Ecosse</td>
+                    <td>Edinburgh</td>
+                    <td>08 08 08 08 08</td>
+                    <td>M</td>
+                    <td>shad@decker.fr</td>
+                  </tr>
+                  <tr>
+                    <td>Michael Bruce</td>
+                    <td>Singapore</td>
+                    <td>Singapore</td>
+                    <td>09 09 09 09 09</td>
+                    <td>M</td>
+                    <td>michael@bruce.fr</td>
+                  </tr>
+                  <tr>
+                    <td>Donna Snider</td>
+                    <td>Etat-Unis</td>
+                    <td>New York</td>
+                    <td>01 01 01 01 01</td>
+                    <td>F</td>
+                    <td>donna@snider.fr</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
